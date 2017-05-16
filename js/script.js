@@ -33,6 +33,12 @@ function agregar(){
 	var cora = document.createElement("span");
 	cora.classList.add("fa","fa-heart");
 
+	//Asignamos padres
+	nuevasTareas.appendChild(chck);
+	nuevasTareas.appendChild(basura);
+	nuevasTareas.appendChild(cora);
+
+
 
 
 }
