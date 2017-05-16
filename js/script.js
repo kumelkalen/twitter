@@ -38,7 +38,20 @@ function agregar(){
 	nuevasTareas.appendChild(basura);
 	nuevasTareas.appendChild(cora);
 
+	//Evento
+	chck.addEventListener("click",function(){
+		elementoContenedor.classList.toggle("tachado");
+	})
+	
+	//Evento remover ícono
+	basura.addEventListener("click",function(){
+		cont.removeChild(nuevasTareas);
+	})
 
+	//Evento para el corazón
+	cora.addEventListener("click",function(){
+		cora.classList.toggle("red");
+	})
 
 
 }
