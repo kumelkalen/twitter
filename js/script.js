@@ -17,6 +17,12 @@ function agregar(){
 	var elementoContenedor = document.createElement("span"); 
 	var textoNuevaTarea = document.createTextNode(tareas);
 
+	//Les asignamos padres a los elementos nuevos
+	elementoContenedor.appendChild(textoNuevaTarea);
+	nuevasTareas.appendChild(elementoContenedor);
+	cont.appendChild(nuevasTareas);
+
+
 }
 
 
